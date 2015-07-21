@@ -95,21 +95,90 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header {
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin: 0.25rem 0.25rem 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
+.contact {
+  float: right;
+  margin-top: 2.25rem;
+}
 
+.contact, .navigation {
+  list-style: none;
+}
 
+.contact li, .navigation li {
+  display: inline-block;
+}
 
+.contact a {
+  padding: 1.125rem 0.75rem;
+}
 
+.email, .codepen, .github {
+  border-right: 1px solid grey;
+}
 
+.navigation {
+  padding: 0;
+}
 
+.navigation li {
+  background-color: #ccc;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+  padding: 0.5rem 1rem;
+}
 
+.nav-journal {
+  border-bottom-left-radius: 3px;
+  border-left: 1px solid grey;
+  border-top-left-radius: 3px;
+}
 
+.nav-tools {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
 
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+}
 
+.navigation li.selected, .navigation li:hover {  /* Need to test "selected" */
+  background-color: cornflowerblue;
+}
 
+.content {
+  margin: 0 3.25rem 3rem;
+  padding-top: 2rem;
+}
 
+section {
+  margin-top: 2.5rem;
+}
 
+article {
+  background-color: lightblue;
+  border: 1px solid grey;
+  border-radius: 3px;
+  /*margin-left: 15%;*/
+  /*margin-top: 2rem;*/
+  padding: 1rem 2rem;
+  width: 20rem;
+}
 
+footer {
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
 
 /* ==========================================================================
    Helper classes
