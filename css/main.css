@@ -165,14 +165,21 @@ section {
   margin-top: 2.5rem;
 }
 
+.flexContainer {
+  align-content: stretch; /* default*/
+  align-items: stretch; /* default*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
 article {
   background-color: lightblue;
   border: 1px solid grey;
   border-radius: 3px;
-  /*margin-left: 15%;*/
-  /*margin-top: 2rem;*/
+  flex: 0 1 20rem;
+  margin: 0 5% 2rem 0;
   padding: 1rem 2rem;
-  width: 20rem;
 }
 
 footer {
