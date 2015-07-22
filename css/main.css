@@ -95,12 +95,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+section:before {
+  content: "";
+  display: block;
+  height: 143.875px;
+  margin-top: -143.875px;
+  visibility: hidden;
+}
+
 header {
-  border: 1px solid grey;
-  border-radius: 3px;
-  margin: 0.25rem 0.25rem 0;
+  background-color: white;
+  /*border: 1px solid grey;*/
+  border-bottom: 1px solid grey;
+  /*border-radius: 3px;*/
+  left: 0;
+  margin: 0; /* previously set as "margin: 0.25rem 0.25rem 0;" */
   padding-left: 3rem;
   padding-right: 3rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+h1 {
+  float: left;
 }
 
 .contact {
@@ -122,6 +140,10 @@ header {
 
 .email, .codepen, .github {
   border-right: 1px solid grey;
+}
+
+nav {
+  clear: both;
 }
 
 .navigation {
@@ -152,17 +174,17 @@ header {
   text-decoration: none;
 }
 
-.navigation li.selected, .navigation li:hover {  /* Need to test "selected" */
+.navigation li:hover {
   background-color: cornflowerblue;
 }
 
 .content {
-  margin: 0 3.25rem 3rem;
+  margin: 7rem 3.25rem 3rem;
   padding-top: 2rem;
 }
 
 section {
-  margin-top: 2.5rem;
+  /*margin-top: 2rem;*/
 }
 
 .flexContainer {
