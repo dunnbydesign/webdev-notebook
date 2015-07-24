@@ -95,19 +95,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-section:before {
-  content: "";
-  display: block;
-  height: 143.875px;
-  margin-top: -143.875px;
-  visibility: hidden;
+/* font-family: 'Syncopate', sans-serif; */
+/* font-family: 'Paytone One', sans-serif; */
+/* font-family: 'Russo One', sans-serif; */
+/* font-family: 'Voltaire', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
+/* font-family: 'Slabo 27px', serif; */
+/* font-family: 'Amaranth', sans-serif; */
+/* font-family: 'Cinzel', serif; */
+
+body {
+  background-image: url("../img/webdev-notebook-image-02.png");
+  background-position: center;
+  background-repeat: repeat;
 }
 
 header {
-  background-color: white;
+  background-color: #3477FF;
   /*border: 1px solid grey;*/
   border-bottom: 1px solid grey;
   /*border-radius: 3px;*/
+  font-family: 'Orbitron', sans-serif;
   left: 0;
   margin: 0; /* previously set as "margin: 0.25rem 0.25rem 0;" */
   padding-left: 3rem;
@@ -118,7 +126,13 @@ header {
 }
 
 h1 {
+  color: ivory;
   float: left;
+}
+
+#logo {
+  color: ivory;
+  text-decoration: none;
 }
 
 .contact {
@@ -135,15 +149,18 @@ h1 {
 }
 
 .contact a {
+  color: ivory;
   padding: 1.125rem 0.75rem;
+  /*text-decoration: none;*/
 }
 
 .email, .codepen, .github {
-  border-right: 1px solid grey;
+  border-right: 1px solid black;
 }
 
 nav {
   clear: both;
+  margin-bottom: 1.5rem;
 }
 
 .navigation {
@@ -175,16 +192,35 @@ nav {
 }
 
 .navigation li:hover {
-  background-color: cornflowerblue;
+  background-color: #6ce;
 }
 
 .content {
+  font-family: 'Slabo 27px', serif;
   margin: 7rem 3.25rem 3rem;
   padding-top: 2rem;
 }
 
+section:before {
+  content: "";
+  display: block;
+  height: 143.875px;
+  margin-top: -143.875px;
+  visibility: hidden;
+}
+
 section {
   /*margin-top: 2rem;*/
+}
+
+section h2 {
+  color: white;
+}
+
+.icon {
+  height: 40px;
+  margin-left: 0.5rem;
+  vertical-align: text-bottom;
 }
 
 .flexContainer {
@@ -196,7 +232,7 @@ section {
 }
 
 article {
-  background-color: lightblue;
+  background-color: white;
   border: 1px solid grey;
   border-radius: 3px;
   flex: 0 1 20rem;
@@ -207,6 +243,7 @@ article {
 .footer-flex {
   align-content: stretch; /* default*/
   align-items: center;
+  color: white;
   display: flex;
   flex-flow: row nowrap; /* default */
   justify-content: center;
